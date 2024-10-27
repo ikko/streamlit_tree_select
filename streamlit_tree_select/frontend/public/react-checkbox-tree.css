@@ -6,7 +6,8 @@
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
-
+  color: light-dark(#333333, #e0e0e0) !important;
+  background-color: light-dark(#ffffff, #1e1e1e) !important;
 }
 
 .react-checkbox-tree>ol {
@@ -47,7 +48,7 @@
 
 .react-checkbox-tree label:active,
 .react-checkbox-tree label:focus {
-  background: rgba(51, 51, 204, 0.15);
+  background: light-dark(rgba(51, 51, 204, 0.15), rgba(100, 100, 255, 0.2));
 }
 
 .react-checkbox-tree:not(.rct-native-display) input {
@@ -99,7 +100,7 @@
 }
 
 .rct-option {
-  opacity: 0.75;
+  opacity: light-dark(0.75, 0.9);
   border: 0;
   background: none;
   cursor: pointer;
@@ -145,7 +146,7 @@
 
 .rct-collapse>.rct-icon-expand-close {
   font-size: 14px;
-  opacity: 0.5;
+  opacity: light-dark(0.5, 0.7);
 }
 
 .rct-collapse>.rct-icon-expand-close:hover {
@@ -162,17 +163,17 @@
 }
 
 .rct-node-clickable:hover {
-  background: rgba(51, 51, 204, 0.1);
+  background: light-dark(rgba(51, 51, 204, 0.1), rgba(100, 100, 255, 0.1));
 }
 
 .rct-node-clickable:focus {
   outline: 0;
-  background: rgba(51, 51, 204, 0.2);
+  background: light-dark(rgba(51, 51, 204, 0.2), rgba(100, 100, 255, 0.2));
 }
 
 .rct-node-icon {
   display: none;
-  color: #33c;
+  color: light-dark(#33c, #6666ff);
 }
 
 .rct-title {
@@ -195,19 +196,18 @@
 }
 
 .rct-icons-fa4 .rct-icon-uncheck::before {
-
   font-size: 1.25rem;
   content: "\f096";
 }
 
 .rct-icons-fa4 .rct-icon-check::before {
-  color: rgb(255, 75, 75);
+  color: light-dark(rgb(255, 75, 75), #ff7f7f);
   font-size: 1.25rem;
   content: "\f14a";
 }
 
 .rct-icons-fa4 .rct-icon-half-check::before {
-  color: rgb(255, 75, 75);
+  color: light-dark(rgb(255, 75, 75), #ff7f7f);
   font-size: 1.25rem;
   opacity: 0.5;
   content: "\f046";
@@ -245,21 +245,20 @@
 }
 
 .rct-icons-fa5 .rct-icon-uncheck::before {
-  color: rgba(49, 51, 63, 0.4);
+  color: light-dark(rgba(49, 51, 63, 0.4), rgba(224, 224, 224, 0.4));
   font-size: 1.25rem;
   content: "\f0c8";
-
 }
 
 .rct-icons-fa5 .rct-icon-check::before {
+  color: light-dark(rgb(255, 75, 75), #ff7f7f);
   content: "\f14a";
-
 }
 
 .rct-icons-fa5 .rct-icon-half-check::before {
+  color: light-dark(rgb(255, 75, 75), #ff7f7f);
   opacity: 0.5;
   content: "\f14a";
-
 }
 
 .rct-icons-fa5 .rct-icon-leaf::before {
