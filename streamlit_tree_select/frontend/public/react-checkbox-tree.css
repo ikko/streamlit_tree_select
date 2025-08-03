@@ -183,6 +183,7 @@
   -webkit-box-align: center;
   align-items: center;
   font-family: "Source Sans Pro", sans-serif;
+  background-color: light-dark(#111111 #fafafa) !important;
 }
 
 .rct-icons-fa4 .rct-icon-expand-close::before {
