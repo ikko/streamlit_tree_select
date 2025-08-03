@@ -10,10 +10,10 @@ _RELEASE = True
 
 if not _RELEASE:
     _tree_select = components.declare_component(
-        # We give the component a simple, descriptive name ("streamlit_tree_select"
+        # We give the component a simple, descriptive name ("streamlit_tree_select_themed"
         # does not fit this bill, so please choose something better for your
         # own component :)
-        "streamlit_tree_select",
+        "streamlit_tree_select_themed",
         # Pass `url` here to tell Streamlit that the component will be served
         # by the local dev server that you run via `npm run start`.
         # (This is useful while your component is in development.)
@@ -25,7 +25,7 @@ else:
     # build directory:
     parent_dir = os.path.dirname(os.path.abspath(__file__))
     build_dir = os.path.join(parent_dir, "frontend/build")
-    _tree_select = components.declare_component("streamlit_tree_select", path=build_dir)
+    _tree_select = components.declare_component("streamlit_tree_select_themed", path=build_dir)
 
 
 # Create a wrapper function for the component.
@@ -41,7 +41,7 @@ def tree_select(nodes: list[dict[str, str, None | list[Any]]],
                 only_leaf_checkboxes: bool = False,
                 show_expand_all: bool = False,
                 key: None | str = None):
-    """Create a new instance of "streamlit_tree_select".
+    """Create a new instance of "streamlit_tree_select_themed".
 
     Parameters
     ----------
@@ -115,7 +115,7 @@ def tree_select(nodes: list[dict[str, str, None | list[Any]]],
 
 # Add some test code to play with the component while it's in development.
 # During development, we can run this just as we would any other Streamlit
-# app: `$ streamlit run streamlit_tree_select/__init__.py`
+# app: `$ streamlit run streamlit_tree_select_themed/__init__.py`
 if not _RELEASE:
     import streamlit as st
 
