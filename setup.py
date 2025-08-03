@@ -1,22 +1,26 @@
 import setuptools
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setuptools.setup(
-    name="streamlit-tree-select",
-    version="0.0.5",
-    author="Schluca",
+    name="streamlit-tree-select-dark",
+    version="0.0.17",
+    author="Manav",
     author_email="",
     description="A simple and elegant checkbox tree for Streamlit.",
-    long_description="",
-    long_description_content_type="text/plain",
-    url="https://github.com/Schluca/streamlit_tree_select",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/manav148/streamlit_tree_select_dark",
     packages=setuptools.find_packages(),
     include_package_data=True,
-    classifiers=[],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
     python_requires=">=3.6",
     install_requires=[
-        # By definition, a Custom Component depends on Streamlit.
-        # If your component has other Python dependencies, list
-        # them here.
         "streamlit >= 0.63",
     ],
 )
